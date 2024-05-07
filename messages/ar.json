@@ -12,6 +12,11 @@
   "Register": {
     "register": "التسجيل"
   },
+  "translate": {
+    "english": "الانجليزية",
+    "french": "الفرنسية",
+    "arabic": "العربية"
+  },
   "Footer": {
     "AYMEN BACHIRI, All rights Reserved": "أيمن بشيري, جميع الحقوق محفوظة",
     "Made With": "صنع مع"

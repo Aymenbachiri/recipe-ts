@@ -8,11 +8,13 @@ import {
   Avatar,
   Typography,
 } from "@material-tailwind/react";
+import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 
 export default function Translation() {
   const pathName = usePathname();
   const router = useRouter();
+  const t = useTranslations("translate");
 
   const handleChangeLanguage = (lang: string) => {
     // Extract the current path without the language segment
@@ -167,7 +169,7 @@ export default function Translation() {
               d="M13.539 14.744L14.13 14.315 13.399 14.315 13.173 13.619 12.947 14.315 12.216 14.315 12.808 14.744 12.582 15.44 13.173 15.01 13.765 15.44 13.539 14.744z"
             ></path>
           </svg>
-          English
+          {t("english")}
         </MenuItem>
         <MenuItem
           onClick={() => handleChangeLanguage("fr")}
@@ -202,7 +204,7 @@ export default function Translation() {
               opacity=".2"
             ></path>
           </svg>
-          French
+          {t("french")}
         </MenuItem>
         <MenuItem
           onClick={() => handleChangeLanguage("ar")}
@@ -244,7 +246,7 @@ export default function Translation() {
               opacity=".2"
             ></path>
           </svg>
-          Arabic
+          {t("arabic")}
         </MenuItem>
       </MenuList>
     </Menu>

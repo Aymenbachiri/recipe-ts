@@ -12,6 +12,11 @@
   "Register": {
     "register": "register"
   },
+  "translate": {
+    "english": "english",
+    "french": "french",
+    "arabic": "arabic"
+  },
   "Footer": {
     "AYMEN BACHIRI, All rights Reserved": "AYMEN BACHIRI, All rights Reserved",
     "Made With": "Made With"
